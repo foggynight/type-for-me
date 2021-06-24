@@ -19,7 +19,7 @@ sudo make install
 
 With GCC:
 ```sh
-gcc -o type-for-me -O3 -I./src src/* -lncurses
+gcc -o type-for-me -O3 src/main.c -lncurses
 sudo cp type-for-me /usr/local/bin
 ```
 
