@@ -26,7 +26,7 @@ sudo cp type-for-me /usr/local/bin
 ### Usage
 
 ```sh
-./type-for-me FILENAME
+type-for-me FILENAME
 ```
 - `FILENAME`: Name of the file to auto-type
 
