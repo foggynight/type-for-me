@@ -16,8 +16,8 @@ remove:
 
 .PHONY: install
 install:
-	cp $(EXEC) $(INSTALL_DIR)/$(EXEC)
+	cp -v $(EXEC) $(INSTALL_DIR)/$(EXEC)
 
 .PHONY: uninstall
 uninstall:
-	rm $(INSTALL_DIR)/$(EXEC)
+	rm -fv $(INSTALL_DIR)/$(EXEC)
