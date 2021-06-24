@@ -1,16 +1,3 @@
-/**
- * --- type-for-me ---
- *
- * Type with perfect precision while smashing random keys.
- *
- * The text will not scroll, thus if the target file contains text that will not
- * fit within the window the program will only function correctly until the last
- * character that fits within the window has been typed.
- *
- * Copyright (C) 2021 Robert Coffey
- * Released under the GPLv2 license
- **/
-
 #include <stdio.h>
 
 #include <ncurses.h>
@@ -22,9 +9,9 @@ int main(int argc, char **argv)
 {
 	if (argc != 2) {
 		fprintf(stderr,
-				"%s: Wrong number of arguments\n"
-				"Usage: %s FILENAME\n",
-				argv[0], argv[0]);
+		        "%s: Wrong number of arguments\n"
+		        "Usage: %s FILENAME\n",
+		        argv[0], argv[0]);
 		return 1;
 	}
 
