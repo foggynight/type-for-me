@@ -2,7 +2,7 @@ EXEC := type-for-me
 INSTALL_DIR := /usr/local/bin
 
 CC := gcc
-CFLAGS := -O3 -Wall -Wextra -Wpedantic -I./src
+CFLAGS := -O3 -Wall -Wextra -Wpedantic
 LIBS := -lncurses
 
 SRCS := $(wildcard src/*.c)
