@@ -2,7 +2,10 @@
 
 #include <ncurses.h>
 
+#define ctrl(x) ((x) & 0x1f)
 #define KEY_ESC '\033'
+#define QUIT_KEY ctrl(KEY_ESC)
+
 #define TEXT_BUFFER_SIZE 2048
 
 int main(int argc, char **argv)
@@ -22,8 +25,9 @@ int main(int argc, char **argv)
 	}
 
 	initscr();
-	noecho();
 	raw();
+	noecho();
+	keypad(stdscr, TRUE);
 
 	char text_buffer[TEXT_BUFFER_SIZE];
 	while (1) {
@@ -32,7 +36,7 @@ int main(int argc, char **argv)
 		                     TEXT_BUFFER_SIZE,
 		                     text_file);
 		for (size_t i = 0; i < count; ++i) {
-			if (getch() == KEY_ESC)
+			if (getch() == QUIT_KEY)
 				goto quit;
 			addch(text_buffer[i]);
 		}
@@ -41,7 +45,7 @@ int main(int argc, char **argv)
 	}
 
 wait:
-	while (getch() != KEY_ESC);
+	while (getch() != QUIT_KEY);
 
 quit:
 	fclose(text_file);
