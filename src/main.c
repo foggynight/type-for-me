@@ -2,9 +2,7 @@
 
 #include <ncurses.h>
 
-#define ctrl(x) ((x) & 0x1f)
-#define KEY_ESC '\033'
-#define QUIT_KEY ctrl(KEY_ESC)
+#define QUIT_KEY KEY_SEND
 
 #define TEXT_BUFFER_SIZE 2048
 
