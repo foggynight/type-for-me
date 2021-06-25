@@ -11,16 +11,9 @@ character that fits within the window has been typed.
 
 ### Installation
 
-With Make:
 ```sh
 make
 sudo make install
-```
-
-With GCC:
-```sh
-gcc -o type-for-me -O3 src/main.c -lncurses
-sudo cp type-for-me /usr/local/bin
 ```
 
 ### Usage
