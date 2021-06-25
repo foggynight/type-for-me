@@ -34,7 +34,7 @@ type-for-me FILENAME
 
 Press any key corresponding to a printable character (including backspace and
 enter) to print the next character contained within the file to auto-type, press
-escape to quit.
+<S-end> to quit.
 
 
 ## Dependencies
