@@ -2,7 +2,7 @@ EXEC := type-for-me
 INSTALL_DIR := /usr/local/bin
 
 CC := gcc
-CFLAGS := -O3
+CFLAGS := -O3 -Wall -Wextra -Wpedantic
 LIBS := -lncurses
 
 SRCS := src/main.c
