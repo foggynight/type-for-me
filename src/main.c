@@ -3,7 +3,6 @@
 #include <ncurses.h>
 
 #define QUIT_KEY KEY_SEND
-
 #define TEXT_BUFFER_SIZE 2048
 
 int main(int argc, char **argv)
