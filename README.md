@@ -1,10 +1,12 @@
 # type-for-me
 
+## Description
+
 Type with perfect accuracy while smashing random keys.
 
-The text will not scroll, thus if the target file contains text that will not
-fit within the window the program will only function correctly until the last
-character that fits within the window has been typed.
+**Note:** The text will not scroll, thus if the target file contains text that
+will not fit within the window the program will only function correctly until
+the last character that fits within the window has been typed.
 
 
 ## Instructions
